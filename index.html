@@ -7,241 +7,351 @@
     <title>Planned Planthood</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar-el">
-        <aside class="logo-el">
-          <img class="logo-img" src="Assets/images/logo.svg" alt="planned planthood logo"> 
-          <span><a href="#">Planned Planthood</a></span>
-        </aside>
-          <ul class="navbar-el-right" role="list">
-            <li class="menu-button"><a href="#">Hem</a></li>
-            <li class="menu-button"><a href="#">Historik</a><li>
-            <li class="menu-button"><a href="#">Tips</a></li>
-            <li class="menu-button"><a href="#">Kontakt</a></li>
-          </ul>
-      </nav>
+<header class="header">
+  <nav class="header__nav" aria-label="Huvudmeny">
+    <a class="header__logo" href="#home">
+      <img class="header__logo-img" src="Assets/images/logo.svg" alt="Planned Planthood logo"/>
+    </a>
+    <span class="header__title">
+      <a class="header__title-link" href="#">Planned <br> Planthood</a>
+    </span>
+    <!-- Hamburger toggle for mobile -->
+    <input type="checkbox" id="header-menu-toggle" class="header__menu-toggle" />
+    <label for="header-menu-toggle" class="header__hamburger">
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </label>
+    <ul class="header__menu">
+      <li class="header__menu-item"><a class="header__menu-link" href="#home">Hem</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="#historik">Historik</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="#tips">Tips</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="main-section-banner">
+    <header class="main-section">
+      <h1 class="main-section__title">Uppskattade växter</h1>
+      <p class="main-section__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
     </header>
-    <main>
-      <section class="main-section-banner">
-        <section class="main-section">
-          <h1 class="main-el">Uppskattade växter</h1>
-          <p class="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
-        </section>
-        <section class="gallery-wrapper">
-            <div class="grid-gallery">
-              <img class="box item1" src="Assets/images/dandelion .webp" alt="Hand holding a dandelion puff with a blurred green background">
-              <img class="box item2" src="Assets/images/raspberries .webp" alt="Two red raspberries resting on a wooden surface with warm light and golden bokeh background">
-              <img class="box item3" src="Assets/images/cactus.webp" alt="Green barrel cactus in a white ceramic pot on a light, blurred background">
-              <img class="box item4" src="Assets/images/calibrachoa.webp" alt="Close-up of a purple calibrachoa flower with veined petals and blurred foliage in the background">
-              <img class="box item5" src="Assets/images/terrarium.webp" alt="Glass terrarium containing a rosette-shaped Echeveria succulent and groundcover plants">
-              <img class="box item6" src="Assets/images/Clivia .webp" alt="Cluster of orange Clivia miniata flowers with trumpet-shaped blooms and yellow stamens">
-            </div>    
-      </section>
-      <section class="submit-container">
-        <diV class="submit-container-form">
-        <h2 class="submit-el">Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h2>
-         <div class="input-wrapper">
-            <form class="form-el" action="/subscribe"   method="post">
-              <label for="email"></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email@domain.com"
-                required
-              />
-              <button type="submit">SKICKA</button>
-            </form>
-          </div>
-        </diV>
-          <div class="planting-icon">
-          <img class="planting-img" src="Assets/images/icon-planting.svg">
-          </div>
-      </section>
-      <section class="cards">
-        <diV class="card">
-          <img src="Assets/images/gurka.png" alt="gurka image">
-          <p>Blommor</p>
-          <p>Ätbart</p>
-          <p>Grönska</p>
-          <header>Gurka</header>
-          <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-          
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Coolio</p> 
-          <p>2024-04-01</p> 
-        </diV>
-
-        <diV class="card">
-          <img src="Assets/images/tomat.png" alt="tomat image">
-          <p>Solälskande</p>
-          <p>Lättodlat</p>
-          <p>Ätbart</p>
-          <header>Tomat</header>
-          <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Anna Odlare</p> 
-          <p>2024-12-05 </p>
+    <figure class="gallery-wrapper">
+      <div class="gallery">
+        <img class="gallery__item gallery__item--1" src="Assets/images/dandelion .webp" alt="Hand holding a dandelion puff with a blurred green background">
+        <img class="gallery__item gallery__item--2" src="Assets/images/raspberries .webp" alt="Two red raspberries resting on a wooden surface with warm light and golden bokeh background">
+        <img class="gallery__item gallery__item--3" src="Assets/images/cactus.webp" alt="Green barrel cactus in a white ceramic pot on a light, blurred background">
+        <img class="gallery__item gallery__item--4" src="Assets/images/calibrachoa.webp" alt="Close-up of a purple calibrachoa flower with veined petals and blurred foliage in the background">
+        <img class="gallery__item gallery__item--5" src="Assets/images/terrarium.webp" alt="Glass terrarium containing a rosette-shaped Echeveria succulent and groundcover plants">
+        <img class="gallery__item gallery__item--6" src="Assets/images/Clivia .webp" alt="Cluster of orange Clivia miniata flowers with trumpet-shaped blooms and yellow stamens">
+      </div>
+      <figcaption class="visually-hidden">Galleri med olika växtbilder</figcaption>
+    </figure>
+  </section>
+  <section aria-labelledby="newsletter-title" class="newsletter">
+    <div class="newsletter__form-container">
+      <h2 class="newsletter__title" id="newsletter-title">
+        Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
+      </h2>
+      <form class="newsletter__form" action="/subscribe" method="post" autocomplete="off">
+        <div class="newsletter__input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="newsletter__input"
+            placeholder="email@domain.com"
+            required
+          />
+          <button class="newsletter__button" type="submit">SKICKA</button>
         </div>
+      </form>
+    </div>
+    <div class="newsletter__icon">
+      <img class="newsletter__img" src="Assets/images/icon-planting.svg" alt="Planting icon" />
+    </div>
+  </section>
 
-        <diV class="card">
-          <img src="Assets/images/pelargon.png" alt="pelargon image">
-          <p>Dekorativ</p>
-          <p>Färgstark</p>
-          <p>Tålig</p> 
-          <p>Blommor</p>
-          <header>Pelargon</header>
-          <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Blomsterkalle</p> 
-          <p>2024-12-03</p>
-        </div>
- 
-        <diV class="card">
-          <img src="Assets/images/basilika.png" alt="Basilika image">
-          <p>Kryddor</p>
-          <p>Doftande</p>
-          <p>Solälskande</p>
-          <header>Basilika</header>
-          <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Krydd-Malin</p> 
-          <p>2024-12-07</p>
-        </div>
 
-        <diV class="card">
-            <img src="Assets/images/sallad.png" alt="sallad image">
-          <p>Snabbväxande</p>
-          <p>Ätbart</p>
-          <p>Grönska</p>
-          <header>Sallad</header>
-          <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Grönis</p> 
-          <p>2024-12-06 </p>
-        </div>
+     <section class="cards">
+  <article class="card">
+    <img class="card__img" src="Assets/images/gurka.png" alt="gurka image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--flower">Blommor</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Gurka</h3>
+      <p class="card__desc">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar1.png" alt="Coolio avatar">
+      <ul class="card__meta">
+        <li class="card__author">Coolio</li>
+        <li class="card__date">2024-04-01</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/ormbunke.png" alt="ormbunke image">
-          <p>Luftfuktande</p>
-          <p>Grönska</p>
-          <p>Dekorativ</p>
-          <header>Ormbunke</header>
-          <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>        
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Naturvännen</p> 
-          <p>2024-12-08</p>
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/tomat.png" alt="tomat image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--sunloving">Solälskande</li>
+      <li class="tags__tag tags__tag--easy">Lättodlat</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Tomat</h3>
+      <p class="card__desc">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar2.png" alt="Anna Odlare avatar">
+      <ul class="card__meta">
+        <li class="card__author">Anna Odlare</li>
+        <li class="card__date">2024-12-05</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/gurka.png" alt="gurka image">
-          <p>Blommor</p>
-          <p>Ätbart</p>
-          <p>Grönska</p>
-          <header>Gurka</header>
-          <p>Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Coolio</p> 
-          <p>2024-04-01</p> 
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/pelargon.png" alt="pelargon image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--decorative">Dekorativ</li>
+      <li class="tags__tag tags__tag--colorful">Färgstark</li>
+      <li class="tags__tag tags__tag--robust">Tålig</li>
+      <li class="tags__tag tags__tag--flower">Blommor</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Pelargon</h3>
+      <p class="card__desc">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar3.png" alt="Blomsterkalle avatar">
+      <ul class="card__meta">
+        <li class="card__author">Blomsterkalle</li>
+        <li class="card__date">2024-12-03</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/tomat.png" alt="tomat image">
-          <p>Solälskande</p>
-          <p>Lättodlat</p>
-          <p>Ätbart</p>
-          <header>Tomat</header>
-          <p>En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Anna Odlare</p> 
-          <p>2024-12-05 </p>
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/basilika.png" alt="Basilika image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--air">Kryddor</li>
+      <li class="tags__tag tags__tag--fragrant">Doftande</li>
+      <li class="tags__tag tags__tag--sunloving">Solälskande</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Basilika</h3>
+      <p class="card__desc">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar4.png" alt="Krydd-Malin avatar">
+      <ul class="card__meta">
+        <li class="card__author">Krydd-Malin</li>
+        <li class="card__date">2024-12-07</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/pelargon.png" alt="pelargon image">
-          <p>Dekorativ</p>
-          <p>Färgstark</p>
-          <p>Tålig</p>
-          <p>Blommor</p>
-          <header>Pelargon</header>
-          <p>En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Blomsterkalle</p> 
-          <p>2024-12-03</p>
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/sallad.png" alt="sallad image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--fast">Snabbväxande</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Sallad</h3>
+      <p class="card__desc">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar5.png" alt="Grönis avatar">
+      <ul class="card__meta">
+        <li class="card__author">Grönis</li>
+        <li class="card__date">2024-12-06</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/basilika.png" alt="Basilika image">
-          <p>Kryddor</p>
-          <p>Doftande</p>
-          <p>Solälskande</p>
-          <header>Basilika</header>
-          <p>En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Krydd-Malin</p> 
-          <p>2024-12-07</p>
-        </div>       
+  <article class="card">
+    <img class="card__img" src="Assets/images/ormbunke.png" alt="ormbunke image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--air">Luftfuktande</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+      <li class="tags__tag tags__tag--decorative">Dekorativ</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Ormbunke</h3>
+      <p class="card__desc">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar6.png" alt="Naturvännen avatar">
+      <ul class="card__meta">
+        <li class="card__author">Naturvännen</li>
+        <li class="card__date">2024-12-08</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/sallad.png" alt="sallad image">
-          <p>Snabbväxande</p>
-          <p>Ätbart</p>
-          <p>Grönska</p>
-          <header>Sallad</header>
-          <p>Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Grönis</p> 
-          <p>2024-12-06 </p>
-        </div>
+  <!-- Duplicates below, same BEM structure -->
+  <article class="card">
+    <img class="card__img" src="Assets/images/gurka.png" alt="gurka image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--flower">Blommor</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Gurka</h3>
+      <p class="card__desc">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar7.png" alt="Coolio avatar">
+      <ul class="card__meta">
+        <li class="card__author">Coolio</li>
+        <li class="card__date">2024-04-01</li>
+      </ul>
+    </footer>
+  </article>
 
-        <diV class="card">
-          <img src="Assets/images/ormbunke.png" alt="ormbunke image">
-          <p>Luftfuktande</p>
-          <p>Grönska</p>
-          <p>Dekorativ</p>
-          <header>Ormbunke</header>
-          <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>        
-          <!-- <img src="icone"> */ inserire icona */ -->
-          <p>Naturvännen</p> 
-          <p>2024-12-08</p>
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/tomat.png" alt="tomat image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--sunloving">Solälskande</li>
+      <li class="tags__tag tags__tag--easy">Lättodlat</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Tomat</h3>
+      <p class="card__desc">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar8.png" alt="Anna Odlare avatar">
+      <ul class="card__meta">
+        <li class="card__author">Anna Odlare</li>
+        <li class="card__date">2024-12-05</li>
+      </ul>
+    </footer>
+  </article>
 
-      </section>
-        <section class="seeding-cont">
-          <div class="seeding">
-            <div class="seeds-circle">
-              <img class="seeds" src="Assets/images/icon-seedling.svg" alt="seeding-icon">
-            </div>
-          </div>
-          <div class="seed-text">
-            <h2>Våra tidigare odlingar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis.</p>
-            <button class="plant-button">Planterade plantor</button>
-          </div>
-        </section>
-      </main>
-        <footer class="footer-section">
-        <div class="footer-left">
-          <aside class="logoicon">
-            <img class="logoimg" src="Assets/images/logo.svg" alt="Planned Planthood logo"> 
-            <span><a href="#">Planned Planthood</a></span>
-          </aside>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga.
-            <br><br>
-            Telefon: 020-1234567<br>
-            E-post: info@plannedplant.com
-          </p>
-        </div>
+  <article class="card">
+    <img class="card__img" src="Assets/images/pelargon.png" alt="pelargon image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--decorative">Dekorativ</li>
+      <li class="tags__tag tags__tag--colorful">Färgstark</li>
+      <li class="tags__tag tags__tag--robust">Tålig</li>
+      <li class="tags__tag tags__tag--flower">Blommor</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Pelargon</h3>
+      <p class="card__desc">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar9.png" alt="Blomsterkalle avatar">
+      <ul class="card__meta">
+        <li class="card__author">Blomsterkalle</li>
+        <li class="card__date">2024-12-03</li>
+      </ul>
+    </footer>
+  </article>
 
-        <div class="footer-right">
-          <ul>
-            <li><a href="#">Hem</a></li>
-            <li><a href="#">Historik</a></li>
-            <li><a href="#">Tips</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </div>
-      </footer>
+  <article class="card">
+    <img class="card__img" src="Assets/images/basilika.png" alt="Basilika image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--air">Kryddor</li>
+      <li class="tags__tag tags__tag--fragrant">Doftande</li>
+      <li class="tags__tag tags__tag--sunloving">Solälskande</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Basilika</h3>
+      <p class="card__desc">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar10.png" alt="Krydd-Malin avatar">
+      <ul class="card__meta">
+        <li class="card__author">Krydd-Malin</li>
+        <li class="card__date">2024-12-07</li>
+      </ul>
+    </footer>
+  </article>
+
+  <article class="card">
+    <img class="card__img" src="Assets/images/sallad.png" alt="sallad image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--fast">Snabbväxande</li>
+      <li class="tags__tag tags__tag--edible">Ätbart</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Sallad</h3>
+      <p class="card__desc">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar1.png" alt="Grönis avatar">
+      <ul class="card__meta">
+        <li class="card__author">Grönis</li>
+        <li class="card__date">2024-12-06</li>
+      </ul>
+    </footer>
+  </article>
+
+  <article class="card">
+    <img class="card__img" src="Assets/images/ormbunke.png" alt="ormbunke image">
+    <ul class="card__tags tags">
+      <li class="tags__tag tags__tag--air">Luftfuktande</li>
+      <li class="tags__tag tags__tag--green">Grönska</li>
+      <li class="tags__tag tags__tag--decorative">Dekorativ</li>
+    </ul>
+    <header class="card__header">
+      <h3 class="card__title">Ormbunke</h3>
+      <p class="card__desc">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+    </header>
+    <footer class="card__footer">
+      <img class="card__avatar" src="Assets/images/avatar12.png" alt="Naturvännen avatar">
+      <ul class="card__meta">
+        <li class="card__author">Naturvännen</li>
+        <li class="card__date">2024-12-08</li>
+      </ul>
+    </footer>
+  </article>
+</section>
+      <section class="seeding">
+    <div class="seeding__icon">
+      <div class="seeding__circle">
+        <img class="seeding__img" src="Assets/images/icon-seedling.svg" alt="seeding-icon">
+      </div>
+    </div>
+    <section class="seeding__content">
+      <h2 class="seeding__title">Våra tidigare odlingar</h2>
+      <p class="seeding__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis.</p>
+      <button class="seeding__button">Planterade plantor</button>
+    </section>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__left">
+    <header class="footer__logo">
+      <img class="footer__logo-img" src="Assets/images/logo2.svg" alt="Planned Planthood logo">
+      <span class="footer__logo-title"><a class="footer__logo-link" href="#">Planned Planthood</a></span>
+    </header>
+    <address class="footer__contact">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga.
+      <br><br>
+      Telefon: 020-1234567<br>
+      E-post: info@plannedplant.com
+    </address>
+  </div>
+  <nav class="footer__right" aria-label="Sidfotsmeny">
+    <ul class="footer__nav">
+      <li class="footer__nav-item"><a class="footer__nav-link" href="#">Hem</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-link" href="#">Historik</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-link" href="#">Tips</a></li>
+      <li class="footer__nav-item"><a class="footer__nav-link" href="#">Kontakt</a></li>
+    </ul>
+  </nav>
+</footer>
   </body>
 </html>
