@@ -510,12 +510,11 @@ body {
 }
 
 .cards {
-  display: grid;
+  display: grid; /* grid layout */
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
   padding: 20px;
   margin: 30px 200px;
-  /* Container query for .card children */
   container-type: inline-size;
   container-name: cards-container;
 }
@@ -530,7 +529,6 @@ body {
   border-radius: 8px;
   transition: box-shadow 0.2s;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
-  /* Make card a container for container queries */
   container-type: inline-size;
   container-name: card;
 }
@@ -545,7 +543,7 @@ body {
 
 .card__tags {
   margin: 0.3rem 0;
-  display: flex;
+  display: flex; /*flex box*/
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -633,7 +631,7 @@ body {
 
 /* --- Responsive and container queries --- */
 
-/* Outer container grid margins for small screens */
+/* container grid for small screens */
 @media (max-width: 900px) {
   .cards {
     margin: 0 10px;
@@ -641,7 +639,7 @@ body {
   }
 }
 
-/* Make grid single column and squeeze paddings on mobile */
+/* grid single column */
 @media (max-width: 600px) {
   .cards {
     grid-template-columns: 1fr;
@@ -681,7 +679,6 @@ body {
   }
 }
 
-/* Medium cards: reduce padding, font size slightly */
 @container card (max-width: 500px) and (min-width: 351px) {
   .card__img {
     aspect-ratio: 5/4;
@@ -701,7 +698,6 @@ body {
   }
 }
 
-/* Cards with extra space: larger font, more padding */
 @container card (min-width: 501px) {
   .card__img {
     aspect-ratio: 4/3;
@@ -721,7 +717,6 @@ body {
   }
 }
 
-/* --- Accessibility and interaction improvements --- */
 .card:hover,
 .card:focus-within {
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.09);
@@ -817,8 +812,6 @@ body {
   height: auto;
 }
 
-.footer__logo-title {}
-
 .footer__logo-link {
   color: var(--clr-accent-light-1);
   text-decoration: none;
@@ -834,7 +827,6 @@ body {
   max-width: 600px;
 }
 
-.footer__contact {}
 
 .footer__nav {
   list-style: none;
